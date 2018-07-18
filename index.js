@@ -20,7 +20,7 @@ function getApiData () {
 	};
 	$.getJSON(url, params, function(data) {
 		displayResults(data);
-	});f
+	});
 }
 
 function displayResults (info) {
@@ -29,19 +29,21 @@ function displayResults (info) {
 		$.each(info, function(index, value) {
 	    	let html = `
 	    		<div class="launch-results">
-	    				<div class="one">
-	    					<h2>${value.rocket.rocket_name}</h2>
-			      			<img src="${value.links.mission_patch_small}" alt="image of mission patch">
-			      		</div>
-			      		<div class="two">
-			      			<h3>Details</h3>
-			      			<ul>
-				      			<li><strong>Video: </strong>Click <a href=${value.links.video_link} target="_blank">here</a> for full launch video.</li>
-				      			<li><strong>Launch Date/Time: </strong> ${value.launch_date_local}</li>
-				      			<li><strong>Article: </strong>Click <a href=${value.links.article_link} target="_blank">here</a> to read article.</li>
-				      			<li><strong>Description: </strong>${value.details}</li>
-			      			</ul>
-			      		</div>			      
+	    			<div class="row">
+	    			<div class="col-6">
+	    				<h2>${value.rocket.rocket_name}</h2>
+			      		<img src="${value.links.mission_patch_small}" alt="image of mission patch">
+			      	</div>
+			      	<div class="col-6">
+			      		<h3>Details</h3>
+			      		<ul>
+				      		<li><strong>Video: </strong>Click <a href=${value.links.video_link} target="_blank">here</a> for full launch video.</li>
+				      		<li><strong>Launch Date/Time: </strong> ${value.launch_date_local}</li>
+				      		<li><strong>Article: </strong>Click <a href=${value.links.article_link} target="_blank">here</a> to read an article about the mission.</li>
+				      		<li><strong>Description: </strong>${value.details}</li>
+			      		</ul>
+			      	</div>
+			      	</div<			      
 		      	</div>	
 		    `
 	        $('.js-results-container').append(html);
@@ -56,7 +58,3 @@ function displayResults (info) {
 }
 
 $(handleSubmitButton);
-
-// <a href=${value.links.video_link} target="_blank"></a>
-
-
