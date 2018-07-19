@@ -32,10 +32,9 @@ function displayResults (info) {
 	    			<div class="row">
 	    			<div class="col-6">
 	    				<h2>${value.rocket.rocket_name}</h2>
-			      		<img src="${value.links.mission_patch_small}" alt="image of mission patch">
+			      		<img class="mission-patch" src="${value.links.mission_patch_small}" alt="image of mission patch">
 			      	</div>
 			      	<div class="col-6">
-			      		<h3>Details</h3>
 			      		<ul>
 				      		<li><strong>Video: </strong>Click <a href=${value.links.video_link} target="_blank">here</a> for full launch video.</li>
 				      		<li><strong>Launch Date/Time: </strong> ${value.launch_date_local}</li>
