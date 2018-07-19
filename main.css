@@ -51,6 +51,14 @@ button {
   background-color: white
   border-radius: 5px;
   cursor: pointer;
+  transition-property: background;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+button:hover {
+  background-color: #1c8bed;
+  border-radius: 5px;
 }
 
 .launch-results {
@@ -66,12 +74,18 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: white;
+  font-size: 20px;
 }
 
 ul {
   text-align: left;
   list-style: square;
+  border-radius: 15px;
+  background-color: #d9d9db;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
 }
 
 strong {
