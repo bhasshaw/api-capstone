@@ -49,7 +49,7 @@ function displayResults (info) {
 		});
 	} else {
 		let html = `
-			<h2>Unfortunately there wasn't any launches in the year you selected.</h2>
+			<h2>Unfortunately there was not any launches during the year you selected.</h2>
 		`
 		$('.js-results-container').append(html);
 	}

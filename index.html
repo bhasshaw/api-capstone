@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>SpaceX Launches</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="spacex.jpg">
-		<link href="falconheavy.jpg">
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="index.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			 <main role="main">
-			 	<div class="row">
-			 		<div class="header" aria-live="polite">
-				 		<h1 class="col-12">SpaceX Launches</h1>
-				 		<p>Learn about every mission</p>
-				 		<form class="js-submit-form ">
-						 	<fieldset>
-						 		<label for="year">Select Year </label>
-						 		<select name="search" class="js-query" required></select>
-						 		<button type="submit">Search</button>
-						 	</fieldset>
-					 	</form>
-				 	</div>
-				 	<section role="region">
-				 		<div class="js-results-container" aria-live="polite"></div>
-				 	</section>
-			 	</div>
-			 </main>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SpaceX Launches</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="spacex.jpg">
+	<link href="falconheavy.jpg">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+	<header role="banner">
+		<div class="header row" aria-live="polite">
+			<h1 class="col-12">SpaceX Launches</h1>
+			<form class="js-submit-form ">
+				<fieldset>
+					<label for="year">Select Year </label>
+					<select name="search" class="js-query" required></select>
+					<button type="submit">Search</button>
+				</fieldset>
+			</form>
 		</div>
-	</body>
+	</header>
+	<section role="region">
+		<div class="js-results-container row" aria-live="polite">
+			<div class="info col-12">
+				<div class="how">
+					<h3>How to search</h3>
+						<p>1. Press the year drop down</p>
+						<p>2. Select the year</p>
+						<p>3. Click Search</p>
+				</div>
+				<div class="about">
+					<h3>About SpaceX</h3>
+					<p>"SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize
+						space technology, with the ultimate goal of enabling people to live on other planets." - SpaceX</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer role="contentinfo">
+		<div class="footer">
+			Created by Bryce Hasshaw<!-- <p class="">Created by Bryce Hasshaw</p> -->
+		</div>
+	</footer>
+</body>
+
 </html>
