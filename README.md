@@ -1,7 +1,14 @@
-SpaceX API
+# SpaceX #
 
-Live Version: https://bhasshaw.github.io/spacex-api/
+Live Link: [SpaceX](https://bhasshaw.github.io/spacex-api/)
 
-Description: This application allow users to learn about all SpaceX launches that have every happened. They select the year they want to know more about and it will bring up all the launches for that year in chronological order. There are links to watch videos, and read articles about the specific launch. It also will give a brief description of the mission as well.
+## What is SpaceX? ##
 
-Technology Used: HTML, CSS, JavaScript, jQuery
+This application allow users to learn about all SpaceX launches that have every happened. They select the year they want to know more about and it will bring up all the launches for that year in chronological order. There is a launch description and links to watch videos, and read articles about specific launches.
+
+## Technology Used ##
+
+* JavaScript
+* jQuery
+* HTML
+* CSS
