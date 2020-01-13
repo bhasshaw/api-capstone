@@ -35,15 +35,18 @@ function displayResults (info) {
 			      		<img class="mission-patch" src="${value.links.mission_patch_small}" alt="image of mission patch">
 			      	</div>
 			      	<div class="col-6">
-			      		<ul>
-				      		<li><strong>Video: </strong>Click <a href=${value.links.video_link} target="_blank">here</a> for full launch video.</li>
-				      		<li><strong>Launch Date/Time: </strong> ${value.launch_date_local}</li>
-				      		<li><strong>Article: </strong>Click <a href=${value.links.article_link} target="_blank">here</a> to read an article about the mission.</li>
-				      		<li><strong>Description: </strong>${value.details}</li>
+						  <ul>
+						  	<li><strong>Video</strong></li>
+							<li>Click <a href=${value.links.video_link} target="_blank">here</a> for full launch video.</li>
+							<li><strong>Launch Date/Time</strong> </li>
+							<li>${value.launch_date_local}</li>
+							<li><strong>Article</strong></li>
+							<li>Click <a href=${value.links.article_link} target="_blank">here</a> to read an article about the mission.</li>
+							<li><strong>Description</strong></li>
+				      		<li>${value.details}</li>
 			      		</ul>
 			      	</div>
-			      	</div<			      
-		      	</div>	
+		      	</div>
 		    `
 	        $('.js-results-container').append(html);
 		});

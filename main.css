@@ -7,8 +7,12 @@ a {
   font-style: italic;
 }
 
-body {
-  background-color: #b6def0;
+html, body{
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #b6def0;
 }
 
 button {
@@ -20,7 +24,6 @@ button {
 }
 
 button:hover {
-  background-color: #1c8bed;
   border-radius: 5px;
 }
 
@@ -29,7 +32,7 @@ fieldset {
 }
 
 h1 {
-  color: white;
+  color: black;
 }
 
 h2 {
@@ -37,7 +40,7 @@ h2 {
 }
 
 label {
-  color: white;
+  color: black;
 }
 
 select {
@@ -73,26 +76,12 @@ strong {
 
 .info {
   background-color: white;
+  text-align: center;
 }
 
 .header p {
   color: white;
   padding-right: 1.04166666%;
-}
-
-.header {
-  background-image: url("falconheavy.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.footer {
-  padding-top: 15px;
-  text-align: center;
-  background-color: white;
-  height: 50px;
-  font-size: 12px;
 }
 
 .how, .about {
@@ -128,4 +117,10 @@ strong {
   .col-12 {
     width: 100%;
   }
+}
+
+.about{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
